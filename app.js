@@ -8,11 +8,10 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
 	if(){
 		
 	}
-    //square.addEventListener('mouseover',setColor)
-    square.addEventListener('touchmove',setColor)
+    square.addEventListener('mouseover',setColor)
 
-    //square.addEventListener('mouseleave',removeColor)
-    square.addEventListener('touchcancel',removeColor)
+    square.addEventListener('mouseleave',removeColor)
+	
     board.append(square)
 }
 function setColor(event){

@@ -6,10 +6,10 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
     const square = document.createElement('div')
     square.classList.add('square')
     square.addEventListener('mouseover',setColor)
-    square.addEventListener('touchstart',setColor)
+    square.addEventListener('touchmove',setColor)
 
     square.addEventListener('mouseleave',removeColor)
-    square.addEventListener('touchend',removeColor)
+    square.addEventListener('touchcancel',removeColor)
     board.append(square)
 }
 function setColor(event){

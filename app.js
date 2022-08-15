@@ -5,10 +5,13 @@ const colors = ['#e74c3c','#8e44ad','#3498db','#e67e22','#2ecc71','#c77c00','#ff
 for (let i = 0; i < SQUARES_NUMBER; i++) {
     const square = document.createElement('div')
     square.classList.add('square')
-    square.addEventListener('mouseover',setColor)
+	if(){
+		
+	}
+    //square.addEventListener('mouseover',setColor)
     square.addEventListener('touchmove',setColor)
 
-    square.addEventListener('mouseleave',removeColor)
+    //square.addEventListener('mouseleave',removeColor)
     square.addEventListener('touchcancel',removeColor)
     board.append(square)
 }
